@@ -124,4 +124,20 @@
 	
 </table>
 </body>
+
+<body>
+	 访问次数：<span id="fangwen_count"></span>
+	 
+    <script src="js/jquery.min.js"></script>
+	<script>
+		  $(document).ready(function(){
+       	  $.get("xx/securityManual/queryCount",function (result) {
+            console.log(result);
+            var i = result;
+            //alert(i)
+            $("#fangwen_count").text(i)
+        });
+    })
+	</script>
+</body>
 </html>
